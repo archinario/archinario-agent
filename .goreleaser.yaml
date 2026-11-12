@@ -1,0 +1,29 @@
+version: 2
+project_name: archinario
+builds:
+  - id: archinario
+    main: ./cmd/archinario
+    binary: archinario
+    env: [CGO_ENABLED=0]
+    goos: [darwin, linux, windows]
+    goarch: [amd64, arm64]
+    flags: [-trimpath]
+    ldflags: ['-s -w -X main.version={{ .Version }}']
+archives:
+  - id: default
+    formats: [tar.gz]
+    name_template: 'archinario_{{ .Version }}_{{ .Os }}_{{ .Arch }}'
+    format_overrides:
+      - goos: windows
+        formats: [zip]
+    files: [LICENSE, README.md]
+checksum:
+  name_template: SHA256SUMS
+  algorithm: sha256
+release:
+  github:
+    owner: archinario
+    name: archinario-agent
+  draft: true
+changelog:
+  sort: asc

@@ -1,0 +1,515 @@
+[
+  {
+    "kind": "client",
+    "title": "Клиент",
+    "category": "apps",
+    "technologies": [
+      "React",
+      "Vue",
+      "Svelte"
+    ],
+    "description": "Пользователь или приложение, которое обращается к системе."
+  },
+  {
+    "kind": "service",
+    "title": "Сервис",
+    "category": "apps",
+    "technologies": [
+      "Go",
+      "Node.js",
+      "Python",
+      "OpenJDK"
+    ],
+    "description": "Отдельная ответственность системы с собственным интерфейсом."
+  },
+  {
+    "kind": "api",
+    "title": "API сервер",
+    "category": "apps",
+    "technologies": [
+      "Go net/http",
+      "Fastify",
+      "FastAPI",
+      "Django",
+      "Spring Boot",
+      "ASP.NET Core"
+    ],
+    "labId": "load-balancing"
+  },
+  {
+    "kind": "worker",
+    "title": "Воркер",
+    "category": "apps",
+    "technologies": [
+      "Go",
+      "Node.js",
+      "Python"
+    ],
+    "labId": "queues"
+  },
+  {
+    "kind": "database",
+    "title": "База данных",
+    "category": "data",
+    "technologies": [
+      "PostgreSQL",
+      "MySQL",
+      "MariaDB",
+      "SQLite",
+      "Cassandra"
+    ],
+    "labId": "storage-choice"
+  },
+  {
+    "kind": "cache",
+    "title": "Кэш",
+    "category": "data",
+    "technologies": [
+      "Redis 8+",
+      "Valkey",
+      "Memcached"
+    ],
+    "labId": "caching"
+  },
+  {
+    "kind": "queue",
+    "title": "Брокер сообщений",
+    "category": "data",
+    "technologies": [
+      "RabbitMQ",
+      "Apache Kafka",
+      "NATS",
+      "Apache Pulsar"
+    ],
+    "labId": "queues"
+  },
+  {
+    "kind": "storage",
+    "title": "Файловое хранилище",
+    "category": "data",
+    "technologies": [
+      "SeaweedFS",
+      "MinIO Community"
+    ],
+    "labId": "file-uploads"
+  },
+  {
+    "kind": "balancer",
+    "title": "Балансировщик",
+    "category": "infra",
+    "technologies": [
+      "NGINX",
+      "HAProxy",
+      "Envoy"
+    ],
+    "labId": "load-balancing"
+  },
+  {
+    "kind": "gateway",
+    "title": "API Gateway",
+    "category": "infra",
+    "technologies": [
+      "Envoy",
+      "Traefik"
+    ],
+    "labId": "api-gateway"
+  },
+  {
+    "kind": "cdn",
+    "title": "CDN",
+    "category": "infra",
+    "technologies": [
+      "Apache Traffic Server",
+      "Varnish Cache"
+    ],
+    "labId": "cdn"
+  },
+  {
+    "kind": "external",
+    "title": "Внешний сервис",
+    "category": "infra",
+    "technologies": [],
+    "description": "Система за границей вашего проекта, от которой зависит взаимодействие."
+  },
+  {
+    "kind": "auth",
+    "title": "Аутентификация",
+    "category": "apps",
+    "technologies": [
+      "Keycloak",
+      "Authentik Community"
+    ],
+    "description": "Проверяет личность пользователя и управляет сеансами."
+  },
+  {
+    "kind": "scheduler",
+    "title": "Планировщик",
+    "category": "apps",
+    "technologies": [
+      "Quartz",
+      "Temporal"
+    ],
+    "description": "Запускает задания по расписанию и координирует их выполнение."
+  },
+  {
+    "kind": "function",
+    "title": "Функция",
+    "category": "apps",
+    "technologies": [
+      "Knative",
+      "Apache OpenWhisk"
+    ],
+    "description": "Выполняет обработчик по запросу или событию."
+  },
+  {
+    "kind": "search",
+    "title": "Поисковый движок",
+    "category": "data",
+    "technologies": [
+      "OpenSearch",
+      "Meilisearch Community"
+    ],
+    "description": "Индексирует данные и выполняет поисковые запросы."
+  },
+  {
+    "kind": "analytics",
+    "title": "Аналитическое хранилище",
+    "category": "data",
+    "technologies": [
+      "ClickHouse",
+      "DuckDB",
+      "Apache Druid"
+    ],
+    "description": "Хранит данные для отчётов и аналитических запросов."
+  },
+  {
+    "kind": "dns",
+    "title": "DNS",
+    "category": "infra",
+    "technologies": [
+      "CoreDNS",
+      "BIND"
+    ],
+    "description": "Сопоставляет доменные имена с адресами и другими записями."
+  },
+  {
+    "kind": "firewall",
+    "title": "Сетевой экран",
+    "category": "infra",
+    "technologies": [
+      "Coraza",
+      "ModSecurity"
+    ],
+    "description": "Фильтрует сетевой или HTTP трафик по правилам доступа."
+  },
+  {
+    "kind": "container",
+    "title": "Контейнер",
+    "category": "infra",
+    "technologies": [
+      "Docker Engine",
+      "containerd",
+      "Podman"
+    ],
+    "description": "Изолирует приложение и его зависимости в среде выполнения."
+  },
+  {
+    "kind": "monitoring",
+    "title": "Мониторинг",
+    "category": "observability",
+    "technologies": [
+      "Prometheus",
+      "Grafana OSS"
+    ],
+    "description": "Собирает метрики и показывает состояние компонентов."
+  },
+  {
+    "kind": "logging",
+    "title": "Сбор логов",
+    "category": "observability",
+    "technologies": [
+      "Loki",
+      "Fluent Bit"
+    ],
+    "description": "Собирает события приложений для поиска и разбора ошибок."
+  },
+  {
+    "kind": "tracing",
+    "title": "Трассировка",
+    "category": "observability",
+    "technologies": [
+      "OpenTelemetry",
+      "Jaeger",
+      "Grafana Tempo"
+    ],
+    "description": "Связывает этапы обработки запроса между компонентами."
+  },
+  {
+    "kind": "group",
+    "title": "Граница системы",
+    "category": "marks",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Объединяет компоненты в сервис, сеть или окружение. Участники перемещаются вместе."
+  },
+  {
+    "kind": "note",
+    "title": "Заметка",
+    "category": "marks",
+    "technologies": [],
+    "description": "Зафиксируйте решение, ограничение или вопрос прямо рядом со схемой."
+  },
+  {
+    "kind": "k8s-cluster",
+    "title": "Cluster",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Граница Kubernetes-кластера."
+  },
+  {
+    "kind": "k8s-namespace",
+    "title": "Namespace",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Логическая область ресурсов внутри кластера."
+  },
+  {
+    "kind": "k8s-node",
+    "title": "Node",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Машина, на которой выполняются Pods. Не принадлежит Namespace."
+  },
+  {
+    "kind": "k8s-pod",
+    "title": "Pod",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Группа совместно запускаемых контейнеров."
+  },
+  {
+    "kind": "k8s-deployment",
+    "title": "Deployment",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Управляет репликами приложения и обновлениями Pods."
+  },
+  {
+    "kind": "k8s-replicaset",
+    "title": "ReplicaSet",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Поддерживает заданное число Pods."
+  },
+  {
+    "kind": "k8s-statefulset",
+    "title": "StatefulSet",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Управляет приложением со стабильными именами и хранилищем."
+  },
+  {
+    "kind": "k8s-daemonset",
+    "title": "DaemonSet",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Размещает экземпляры приложения на подходящих узлах."
+  },
+  {
+    "kind": "k8s-job",
+    "title": "Job",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Выполняет задачу до завершения."
+  },
+  {
+    "kind": "k8s-cronjob",
+    "title": "CronJob",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Создаёт задачи по расписанию."
+  },
+  {
+    "kind": "k8s-service",
+    "title": "Service",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Предоставляет стабильную точку доступа к выбранным Pods."
+  },
+  {
+    "kind": "k8s-gateway",
+    "title": "Gateway",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Описывает входные слушатели; трафик обрабатывает реализация Gateway."
+  },
+  {
+    "kind": "k8s-httproute",
+    "title": "HTTPRoute",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Задаёт правила HTTP-маршрутизации для Gateway."
+  },
+  {
+    "kind": "k8s-ingress",
+    "title": "Ingress",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Описывает HTTP-маршрутизацию для Ingress-контроллера."
+  },
+  {
+    "kind": "k8s-networkpolicy",
+    "title": "NetworkPolicy",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Описывает разрешённые сетевые взаимодействия Pods."
+  },
+  {
+    "kind": "k8s-pv",
+    "title": "PersistentVolume",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Ресурс постоянного хранилища кластера."
+  },
+  {
+    "kind": "k8s-pvc",
+    "title": "PersistentVolumeClaim",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Запрос приложения на постоянное хранилище."
+  },
+  {
+    "kind": "k8s-configmap",
+    "title": "ConfigMap",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Несекретная конфигурация приложения."
+  },
+  {
+    "kind": "k8s-secret",
+    "title": "Secret",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Ссылка на секрет приложения. Значения секретов здесь не хранятся."
+  },
+  {
+    "kind": "k8s-hpa",
+    "title": "HorizontalPodAutoscaler",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Описывает автоматическое изменение числа реплик."
+  },
+  {
+    "kind": "k8s-serviceaccount",
+    "title": "ServiceAccount",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Идентификатор приложения для доступа к Kubernetes API."
+  },
+  {
+    "kind": "k8s-role",
+    "title": "Role",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Определяет разрешения в пространстве имён."
+  },
+  {
+    "kind": "k8s-rolebinding",
+    "title": "RoleBinding",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Назначает разрешения пользователям или ServiceAccount."
+  },
+  {
+    "kind": "k8s-apiserver",
+    "title": "API Server",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Точка доступа к Kubernetes API."
+  },
+  {
+    "kind": "k8s-etcd",
+    "title": "etcd",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Хранит состояние кластера."
+  },
+  {
+    "kind": "k8s-scheduler",
+    "title": "Scheduler",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Выбирает узел для размещения Pod."
+  },
+  {
+    "kind": "k8s-controller",
+    "title": "Controller Manager",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Согласует текущее и желаемое состояние ресурсов."
+  },
+  {
+    "kind": "k8s-kubelet",
+    "title": "kubelet",
+    "category": "kubernetes",
+    "technologies": [
+      "Kubernetes"
+    ],
+    "description": "Обеспечивает выполнение Pods на узле."
+  }
+]
